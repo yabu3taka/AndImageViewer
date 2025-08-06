@@ -1,0 +1,50 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditTextPreference
+        android:dialogLayout="@layout/preference_type_number"
+        app:defaultValue="1500"
+        app:key="timerTime"
+        app:title="@string/pref_timer"
+        app:useSimpleSummaryProvider="true" />
+
+    <PreferenceCategory app:title="@string/pref_header_navi">
+
+        <ListPreference
+            android:defaultValue="R"
+            android:entries="@array/flick_type"
+            android:entryValues="@array/pos_type_values"
+            app:key="naviFlickNext"
+            app:title="@string/pref_flick_navi_next"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:defaultValue="R"
+            android:entries="@array/pos_type"
+            android:entryValues="@array/pos_type_values"
+            app:key="naviNext"
+            app:title="@string/pref_navi_next"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:dialogLayout="@layout/preference_type_number"
+            app:defaultValue="20"
+            app:key="naviPercent"
+            app:title="@string/pref_navi_percent"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/pref_header_side">
+
+        <ListPreference
+            android:defaultValue="L"
+            android:entries="@array/pos_type"
+            android:entryValues="@array/pos_type_values"
+            app:key="sidePos"
+            app:title="@string/pref_side_pos"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

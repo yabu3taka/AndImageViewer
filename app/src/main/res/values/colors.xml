@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bgcolor_actionbar">#78000000</color>
+    <color name="bgcolor_navi_bar">#33000000</color>
+    <color name="bgcolor_loading">#78000000</color>
+
+    <color name="bgcolor_overlay">#77000000</color>
+
+    <color name="bgcolor_over">#AA0000AA</color>
+    <color name="bgcolor_normal">#AA000000</color>
+    <color name="bgcolor_select">#AA0000AA</color>
+
+    <color name="bgcolor_dir_on">#AAAAAA00</color>
+    <color name="bgcolor_dir_off">#00000000</color>
+</resources>

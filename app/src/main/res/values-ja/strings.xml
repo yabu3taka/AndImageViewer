@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIV</string>
+
+    <!-- Value List -->
+    <string name="vlist_flick_type_right">左⇒右</string>
+    <string name="vlist_flick_type_left">右⇒左</string>
+
+    <string name="vlist_pos_type_right">右</string>
+    <string name="vlist_pos_type_left">左</string>
+
+    <string name="vlist_list_show_types_index">インデックス</string>
+    <string name="vlist_list_show_types_all">全て</string>
+
+    <string name="vlist_storage_types_local">ローカル</string>
+    <string name="vlist_storage_types_drive">Googleドライブ</string>
+
+    <string name="vlist_list_cache_types_all">全て</string>
+    <string name="vlist_list_cache_types_checked">選択中</string>
+    <string name="vlist_list_cache_types_incomplete">未完了</string>
+
+    <!-- Progress -->
+    <string name="progress_start">開始</string>
+    <string name="progress_success">完了</string>
+    <string name="progress_error">エラー</string>
+    <string name="progress_cancel">キャンセル</string>
+
+    <!-- Misc -->
+    <string name="text_done">完了</string>
+
+    <!-- Main Activity -->
+    <string name="text_password">パスワード:</string>
+    <string name="text_storage">ストレージ:</string>
+    <string name="text_user">ユーザ:</string>
+    <string name="text_folder">フォルダー:</string>
+    <string name="text_check">フォルダー確認:</string>
+    <string name="text_folder_select">フォルダー設定</string>
+
+    <string name="fcheck_dir">要フォルダー確認</string>
+    <string name="fcheck_empty">フォルダーが未選択</string>
+    <string name="fcheck_doing">確認中</string>
+    <string name="fcheck_done">OK</string>
+    <string name="fcheck_retry">再度確認</string>
+
+    <string name="info_run_folder_check">フォルダー確認実施</string>
+    <string name="err_password">パスワード認証失敗</string>
+    <string name="err_bad_scramble">スクランブル情報の取得失敗</string>
+
+    <string name="menu_setting">設定</string>
+
+    <string name="perm_error_title">パーミッション取得エラー</string>
+    <string name="perm_request_account">このアプリにはアカウント取得パーミッションが必要です</string>
+    <string name="perm_self_account">今後は許可しないが選択されました。\nアプリ設定＞権限をチェックしてください\n（権限をON/OFFすることで状態はリセットされます）</string>
+
+    <!-- Dir Activity -->
+    <string name="title_activity_dir">フォルダ</string>
+    <string name="title_activity_dir_edit_fav">お気に入り編集</string>
+
+    <string name="menu_dir_edit">お気に入り編集</string>
+    <string name="menu_dir_commit">お気に入り確定</string>
+    <string name="menu_cache">キャッシュ管理</string>
+
+    <string name="menu_cache_sync">同期</string>
+    <string name="menu_cache_check">確認</string>
+    <string name="menu_cache_retry">再実行</string>
+    <string name="menu_cache_delete">削除</string>
+
+    <string name="fav_title">お気に入り</string>
+    <string name="fav_mess">お気に入りを更新しますか？</string>
+
+    <string name="show_btn">表示</string>
+    <string name="cache_dl_running">ダウンロード完了後にクリック</string>
+
+    <!-- Cache Activity -->
+    <string name="cache_title">キャッシュ</string>
+    <string name="cache_stop_mess">ダウンロードを中止しますか？</string>
+    <string name="cache_clear_mess">キャッシュを削除しますか？</string>
+    <string name="cache_stop">中止</string>
+    <string name="cache_restart">再実行</string>
+
+    <string name="cache_direct_title">フォルダー名削除</string>
+    <string name="cache_direct_clear_mess">フォルダーを削除しますか？</string>
+
+    <string name="rename_title">フォルダー名変更</string>
+    <string name="rename_same">新しい名前を入力してください</string>
+    <string name="rename_exist">既に存在する名前です</string>
+
+    <!-- Show Activity -->
+    <string name="title_activity_show">表示</string>
+
+    <string name="err_empty">データがありません</string>
+
+    <string name="menu_start">スライド開始</string>
+    <string name="menu_stop">スライド終了</string>
+    <string name="menu_open_list">リストを開く</string>
+    <string name="menu_close_list">リストを閉じる</string>
+    <string name="menu_open_text">テキストを開く</string>
+    <string name="menu_close_text">テキストを閉じる</string>
+    <string name="menu_rotate">回転</string>
+
+    <!-- Settings Activity -->
+    <string name="title_activity_settings">設定</string>
+
+    <string name="pref_timer">スライド秒(ミリ秒)</string>
+
+    <string name="pref_header_navi">ナビ</string>
+    <string name="pref_flick_navi_next">フリック次へ</string>
+    <string name="pref_navi_next">次へ</string>
+    <string name="pref_navi_percent">ナビゲーション範囲(%)</string>
+
+    <string name="pref_header_side">サイドリスト</string>
+    <string name="pref_side_pos">位置</string>
+
+    <string name="pref_err_timer">1000以上の値を入力</string>
+    <string name="pref_err_navi_percent">5から40の間の値を入力</string>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="flick_type">
+        <item>@string/vlist_flick_type_right</item>
+        <item>@string/vlist_flick_type_left</item>
+    </string-array>
+    <string-array name="pos_type">
+        <item>@string/vlist_pos_type_right</item>
+        <item>@string/vlist_pos_type_left</item>
+    </string-array>
+    <string-array name="pos_type_values">
+        <item>R</item>
+        <item>L</item>
+    </string-array>
+
+    <string-array name="list_show_types">
+        <item>@string/vlist_list_show_types_index</item>
+        <item>@string/vlist_list_show_types_all</item>
+    </string-array>
+    <string-array name="storage_types">
+        <item>@string/vlist_storage_types_local</item>
+        <item>@string/vlist_storage_types_drive</item>
+    </string-array>
+
+    <string-array name="list_direct_types">
+        <item>@string/vlist_list_cache_types_all</item>
+        <item>@string/vlist_list_cache_types_checked</item>
+    </string-array>
+    <string-array name="list_cache_types">
+        <item>@string/vlist_list_cache_types_all</item>
+        <item>@string/vlist_list_cache_types_checked</item>
+        <item>@string/vlist_list_cache_types_incomplete</item>
+    </string-array>
+</resources>

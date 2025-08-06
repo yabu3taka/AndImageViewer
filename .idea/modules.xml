@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android.ScrumbledImageViewer.iml" filepath="$PROJECT_DIR$/.idea/modules/Android.ScrumbledImageViewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android.ScrumbledImageViewer.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ScrumbledImageViewer.iml" filepath="$PROJECT_DIR$/.idea/modules/ScrumbledImageViewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ScrumbledImageViewer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ScrumbledImageViewer.app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_cache_check"
+        android:icon="@android:drawable/ic_popup_sync"
+        android:title="@string/menu_cache_check"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_cache_sync"
+        android:icon="@android:drawable/stat_sys_download"
+        android:title="@string/menu_cache_sync"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_cache_retry"
+        android:icon="@android:drawable/ic_dialog_alert"
+        android:title="@string/menu_cache_retry"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_cache_delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/menu_cache_delete"
+        app:showAsAction="ifRoom" />
+</menu>

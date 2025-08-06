@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat" />
+
+    <style name="AppTheme.Settings" parent="Theme.AppCompat" />
+
+    <!-- FullScreen application theme. -->
+    <style name="AppTheme.Overlay" parent="Theme.AppCompat">
+        <item name="android:actionBarStyle">@style/AppTheme.Overlay.ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/AppTheme.Overlay.ActionBar</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.Overlay.ActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/bgcolor_actionbar</item>
+        <item name="background">@color/bgcolor_actionbar</item>
+    </style>
+</resources>

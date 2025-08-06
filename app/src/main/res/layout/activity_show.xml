@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.show.ShowActivity">
+
+    <ImageSwitcher
+        android:id="@+id/MainImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ImageSwitcher>
+
+    <TextView
+        android:id="@+id/ImageFileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/bgcolor_overlay"  />
+
+    <LinearLayout
+        android:id="@+id/SideNavi"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="RtlHardcoded">
+
+        <Spinner
+            android:id="@+id/TypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:background="@color/bgcolor_overlay" />
+
+        <ListView
+            android:id="@+id/ImageList"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="0.8"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ContentArea"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:background="@color/bgcolor_overlay"
+        android:paddingStart="6dip"
+        android:paddingEnd="6dip"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/PhotoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/LoadingArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@color/bgcolor_loading"
+        android:orientation="horizontal"
+        android:paddingStart="8dip"
+        android:paddingTop="4dip"
+        android:paddingEnd="8dip"
+        android:paddingBottom="4dip"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/ProgressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/NaviBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/bgcolor_navi_bar"
+        android:max="10"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:progress="0"
+        android:visibility="visible" />
+
+</merge>

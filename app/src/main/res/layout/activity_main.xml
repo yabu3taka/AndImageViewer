@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/HeaderBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="textView1,textView2,textView3,textView4,textView5,textView6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/PasswordText"
+        android:text="@string/text_password"
+        app:layout_constraintBaseline_toBaselineOf="@+id/PasswordText"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="password"
+        android:imeOptions="actionDone"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/text_storage"
+        app:layout_constraintBaseline_toBaselineOf="@+id/StorageSpinner"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <Spinner
+        android:id="@+id/StorageSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/storage_types"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordText" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/DriveGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="textView3,textView4,DriveUserText,DriveFolderText,SignInButton" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/text_user"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DriveUserText"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <TextView
+        android:id="@+id/DriveUserText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/SignInButton"
+        app:layout_constraintEnd_toStartOf="@+id/SignInButton"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toTopOf="@+id/SignInButton" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/SignInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintTop_toBottomOf="@+id/StorageSpinner" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:labelFor="@+id/DriveFolderText"
+        android:text="@string/text_folder"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DriveFolderText"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <EditText
+        android:id="@+id/DriveFolderText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints="folder"
+        android:inputType="text"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toBottomOf="@+id/SignInButton" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/LocalGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="textView5,SelectFolderButton,LocalFolderText" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:labelFor="@+id/LocalFolderText"
+        android:text="@string/text_folder"
+        app:layout_constraintBaseline_toBaselineOf="@+id/LocalFolderText"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <EditText
+        android:id="@+id/LocalFolderText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="folder"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/SelectFolderButton"
+        app:layout_constraintEnd_toStartOf="@+id/SelectFolderButton"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toTopOf="@+id/SelectFolderButton" />
+
+    <ImageButton
+        android:id="@+id/SelectFolderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/text_folder_select"
+        android:src="@android:drawable/ic_menu_manage"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintTop_toBottomOf="@+id/DriveFolderText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/text_check"
+        app:layout_constraintBaseline_toBaselineOf="@+id/SelectCheckText"
+        app:layout_constraintStart_toStartOf="@+id/glLeft" />
+
+    <TextView
+        android:id="@+id/SelectCheckText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/SelectCheckButton"
+        app:layout_constraintEnd_toStartOf="@+id/SelectCheckButton"
+        app:layout_constraintStart_toEndOf="@+id/HeaderBarrier"
+        app:layout_constraintTop_toTopOf="@+id/SelectCheckButton" />
+
+    <ImageButton
+        android:id="@+id/SelectCheckButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/info_run_folder_check"
+        android:src="@android:drawable/ic_menu_rotate"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintTop_toBottomOf="@+id/SelectFolderButton" />
+
+    <Button
+        android:id="@+id/OkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@android:string/ok"
+        app:layout_constraintEnd_toStartOf="@+id/glRight"
+        app:layout_constraintStart_toStartOf="@+id/glLeft"
+        app:layout_constraintTop_toBottomOf="@+id/SelectCheckButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
